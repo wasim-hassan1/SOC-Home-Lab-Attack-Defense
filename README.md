@@ -50,7 +50,7 @@ Key activities include:
 
 ## 🎬 Network Topology Animation
 
-Click below to view the **interactive network diagram**:
+View  **interactive network diagram**:
 
 ➡️ ![View Animation](animation.svg)
 
