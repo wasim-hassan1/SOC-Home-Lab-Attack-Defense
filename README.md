@@ -139,11 +139,6 @@ Interested in improving this project? Contributions are welcome!
 2. Create a new branch with your improvements.
 3. Submit a pull request for review.
 
-### GitHub Repository Badges:
-![GitHub stars](https://img.shields.io/github/stars/xAHIINX00/SOC-Home-Lab-Attack-Defense-Simulation.svg)
-![GitHub forks](https://img.shields.io/github/forks/xAHIINX00/SOC-Home-Lab-Attack-Defense-Simulation.svg)
-![GitHub issues](https://img.shields.io/github/issues/xAHIINX00/SOC-Home-Lab-Attack-Defense-Simulation.svg)
-
 ---
 ## Conclusion
 This project demonstrates how to:
