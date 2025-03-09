@@ -52,7 +52,7 @@ Key activities include:
 
 Click below to view the **interactive network diagram**:
 
-➡️ [View Animation]
+➡️ ![View Animation](animation.svg)
 
 📌 *The Kali Linux machine attacks the Windows VM, and logs are collected by Splunk for analysis.*
 
