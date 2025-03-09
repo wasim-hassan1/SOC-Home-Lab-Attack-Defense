@@ -151,10 +151,9 @@ This project demonstrates how to:
 ### 📌 Connect with Me:
 - [LinkedIn](https://www.linkedin.com/in/wasim-hassan-030b80349/)
 
-## 🎬 Network Topology Animation  
+## 🎬 Network Topology Animation    
+Click below to view the **interactive network diagram**:    
+➡️ [View Animation](https://wasim-hassan1.github.io/SOC-Home-Lab-Attack-Defense/network-diagram.html)   
 
-Click below to view the **interactive network diagram**:  
-
-➡️ [View Animation](network-diagram.html)  
 
   
