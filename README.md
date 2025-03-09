@@ -34,11 +34,10 @@ This project demonstrates the setup of a home lab environment for cybersecurity 
 | **Internet Connection**      | Required for downloading and configuring tools  |
 
 ---
-## Network Topology
-Below is a simple network topology illustrating the setup:
-```
-   [Kali Linux (Attacker)]  --->  [Windows 10 VM (Target)]  --->  [Splunk (Log Monitoring)]
-```
+## 🎬 Network Topology Animation    
+Click below to view the **interactive network diagram**:    
+➡️ [View Animation](https://wasim-hassan1.github.io/SOC-Home-Lab-Attack-Defense/network-diagram.html.svg)   
+
 *The Kali Linux machine attacks the Windows VM, and logs are collected by Splunk for analysis.*
 
 ---
@@ -151,9 +150,6 @@ This project demonstrates how to:
 ### 📌 Connect with Me:
 - [LinkedIn](https://www.linkedin.com/in/wasim-hassan-030b80349/)
 
-## 🎬 Network Topology Animation    
-Click below to view the **interactive network diagram**:    
-➡️ [View Animation](https://wasim-hassan1.github.io/SOC-Home-Lab-Attack-Defense/network-diagram.html.svg)   
 
 
   
