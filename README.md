@@ -1,4 +1,4 @@
-# 👨‍💻SOC Home Lab: Attack & Defense Simulation🚀
+# SOC Home Lab: Attack & Defense Simulation
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -154,5 +154,5 @@ This project demonstrates how to:
 > **Note:** This is for educational purposes only. Do not use these techniques for unauthorized activities.
 
 ### 📌 Connect with Me:
-- [LinkedIn](https://www.linkedin.com/in/ahinsunil-m) 
-- [GitHub](https://github.com/xAHIINX00) 
+- [LinkedIn](https://www.linkedin.com/in/wasim-hassan-030b80349/) 
+  
