@@ -149,5 +149,12 @@ This project demonstrates how to:
 > **Note:** This is for educational purposes only. Do not use these techniques for unauthorized activities.
 
 ### 📌 Connect with Me:
-- [LinkedIn](https://www.linkedin.com/in/wasim-hassan-030b80349/) 
+- [LinkedIn](https://www.linkedin.com/in/wasim-hassan-030b80349/)
+
+## 🎬 Network Topology Animation  
+
+Click below to view the **interactive network diagram**:  
+
+➡️ [View Animation](network-diagram.html)  
+
   
