@@ -153,7 +153,7 @@ This project demonstrates how to:
 
 ## 🎬 Network Topology Animation    
 Click below to view the **interactive network diagram**:    
-➡️ [View Animation](https://wasim-hassan1.github.io/SOC-Home-Lab-Attack-Defense/network-diagram.html)   
+➡️ [View Animation](https://wasim-hassan1.github.io/SOC-Home-Lab-Attack-Defense/network-diagram.html.svg)   
 
 
   
